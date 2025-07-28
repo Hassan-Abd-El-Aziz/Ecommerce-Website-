@@ -23,7 +23,7 @@
           <button type="submit">Search</button>
         </form>
         <div class="cart_header">
-          <div class="icon_cart">
+          <div onclick="open_cart()" class="icon_cart">
             <i class="fa-solid fa-bag-shopping"></i>
             <span class="count_item">0</span>
           </div>
@@ -49,5 +49,49 @@
         </div>
       </nav>
     </header>
+    <div class="cart">
+      <div class="top_cart">
+        <h3>My cart <span>(0Item in Cart)</span></h3>
+        <span onclick="close_cart()" class="close_cart"
+          ><i class="fa-regular fa-circle-xmark"></i
+        ></span>
+      </div>
+      <div class="items_in_cart">
+        <div class="item_cart">
+          <img src="img/product/product-1.jpg" alt="" />
+          <div class="content">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, dolor.
+            </h4>
+            <p class="price_cart">$140</p>
+          </div>
+          <button class="delete_item"><i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="item_cart">
+          <img src="img/product/product-2.jpg" alt="" />
+          <div class="content">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, dolor.
+            </h4>
+            <p class="price_cart">$140</p>
+          </div>
+          <button class="delete_item"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>Cart subtotal</p>
+          <div class="price_cart_total">$0</div>
+        </div>
+        <div class="button_cart">
+          <a href="#" class="btn_cart">proceed to checkout</a>
+          <button class="btn_cart trans_bg">Shop more</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
