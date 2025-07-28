@@ -299,6 +299,10 @@ header .links .loging_signup a {
 /* end side card */
 
 /* start slider */
+.slider .container {
+  display: flex;
+  justify-content: space-between;
+}
 .slider .container .side_bar {
   width: 300px;
   display: flex;
@@ -324,4 +328,28 @@ header .links .loging_signup a {
 .slider .container .side_bar a:hover {
   color: white;
   background: var(--main-color);
+}
+
+.slider .container .slide-swp {
+  width: calc(100% - 350px);
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .container .slide-swp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+.slider .container .slide-swp .swiper-pagination span {
+  background: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-color) !important;
+  width: 35px !important;
+  height: 8px !important;
+  border-radius: 30px !important;
 }
