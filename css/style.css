@@ -295,3 +295,33 @@ header .links .loging_signup a {
 .cart .button_cart .trans_bg:hover {
   background: var(--main-color);
 }
+
+/* end side card */
+
+/* start slider */
+.slider .container .side_bar {
+  width: 300px;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+}
+.slider .container .side_bar h2 {
+  padding: 20px 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.slider .container .side_bar a {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500px;
+  color: var(--dark-color);
+  border-top: 1px solid var(--border-color);
+  transition: 0.3s ease-in-out;
+}
+.slider .container .side_bar a:hover {
+  color: white;
+  background: var(--main-color);
+}
