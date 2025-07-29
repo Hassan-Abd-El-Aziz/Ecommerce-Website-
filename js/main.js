@@ -31,9 +31,25 @@ function grtCartItems() {
             </h4>
             <p class="price_cart">$${product_cart[i].price}</p>
           </div>
-          <button class="delete_item"><i class="fa-solid fa-trash"></i></button>
+          <button onclick="removeFromCart(${i})" class="delete_item"><i class="fa-solid fa-trash"></i></button>
         </div>
 `;
   }
   items_in_cart.innerHTML = items_c;
+}
+
+function removeFromCart(index) {
+  product_cart.splice(index, 1);
+  grtCartItems();
+
+  //علشان يشيل الاكتيف من على الزرار في حالة حذف المنتج
+  let addToCartButtons = document.querySelectorAll(".fa-cart-plus");
+  for (let i = 0; i < addToCartButtons.length; i++) {
+    addToCartButtons[i].classList.remove("active");
+    product_cart.forEach((product) => {
+      if (product.id == i) {
+        addToCartButtons[i].classList.add("active");
+      }
+    });
+  }
 }
