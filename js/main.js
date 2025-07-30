@@ -18,8 +18,14 @@ function addToCart(id, btn) {
   btn.classList.add("active");
   grtCartItems();
 }
+// تظبيط السعر اللي في الكارت - اجمالي السعر
+let count_item = document.querySelector(".count_item");
+let price_cart_Head = document.querySelector(".price_cart_Head");
+let count_item_cart = document.querySelector(".count_item_cart");
+let price_cart_total = document.querySelector(".price_cart_total");
 
 function grtCartItems() {
+  let total_Price = 0;
   let items_c = "";
   for (let i = 0; i < product_cart.length; i++) {
     items_c += `
@@ -34,8 +40,14 @@ function grtCartItems() {
           <button onclick="removeFromCart(${i})" class="delete_item"><i class="fa-solid fa-trash"></i></button>
         </div>
 `;
+    total_Price += product_cart[i].price;
   }
   items_in_cart.innerHTML = items_c;
+  price_cart_Head.innerHTML = "$" + total_Price;
+  count_item.innerHTML = product_cart.length;
+
+  count_item_cart.innerHTML = `${product_cart.length} Item in Cart`;
+  price_cart_total.innerHTML = "$" + total_Price;
 }
 
 function removeFromCart(index) {

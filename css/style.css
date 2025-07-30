@@ -441,6 +441,12 @@ header .links .loging_signup a {
   height: 100%;
   z-index: 100;
 }
+
+.banner_big.banner .container .banner_img {
+  position: relative;
+  width: 49%;
+}
+
 /* end banner */
 /* start slide */
 .slide {
@@ -603,9 +609,10 @@ header .links .loging_signup a {
 }
 
 /* sliders */
-
-.slide .container .mySwiper {
+.slide .container {
   position: relative;
+}
+.slide .container .mySwiper {
   overflow: hidden;
   padding: 10px;
 }
@@ -626,4 +633,82 @@ header .links .loging_signup a {
 
 .slide .container .mySwiper .btn_Swip.swiper-button-prev {
   left: calc(100% - 90px);
+}
+
+/* slide_Product */
+
+.slide_Product .product_swip {
+  width: calc(100% - 300px);
+}
+.slide_Product .slid_with_img {
+  display: flex;
+  justify-content: space-between;
+}
+.slide_Product .categ_img {
+  padding: 10px 0;
+  width: 280px;
+}
+.slide_Product .categ_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* newsletter */
+
+.newsletter {
+  background: #fff;
+}
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.newsletter .text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.newsletter .text img {
+  width: 100px;
+}
+.newsletter .text h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.newsletter .text p {
+  margin: 12px 0;
+}
+.newsletter .text h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.newsletter .newsletter_form {
+  width: 40%;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.newsletter .newsletter_form input {
+  padding: 20px 175px 20px 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.newsletter .newsletter_form button {
+  background: var(--main-color);
+  outline: none;
+  border: none;
+  width: 170px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #222;
 }
