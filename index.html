@@ -41,7 +41,15 @@
 
       <nav>
         <div class="links container">
-          <ul>
+          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+          <ul id="menu">
+            <span onclick="close_menu()" class="bg_overlay"></span>
+            <i
+              onclick="close_menu()"
+              class="fa-regular fa-circle-xmark btn_close_menu"
+            ></i>
+            <img class="logo_menu" src="img/logo-black.png" alt="" />
+
             <li><a class="active" href="">home</a></li>
             <li><a href="">all product</a></li>
             <li><a href="">about us</a></li>

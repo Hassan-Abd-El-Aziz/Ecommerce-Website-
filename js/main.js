@@ -7,6 +7,16 @@ function close_cart() {
   cart.classList.remove("active");
 }
 
+// open & close Menu
+
+var menu = document.querySelector("#menu");
+function open_menu() {
+  menu.classList.add("active");
+}
+function close_menu() {
+  menu.classList.remove("active");
+}
+
 // add item in cart
 
 var all_products_json;

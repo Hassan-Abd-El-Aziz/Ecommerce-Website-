@@ -814,3 +814,97 @@ footer .bottom_footer .payment_img img {
 footer .bottom_footer .payment_img img:hover {
   filter: grayscale(0%);
 }
+/* togel Menu */
+header .links ul .bg_overlay,
+header .links .btn_open_menu,
+header .links ul .logo_menu,
+header .links ul .btn_close_menu {
+  display: none;
+}
+
+/* Responsiv */
+@media (max-width: 1000px) {
+  header .top-nav .search {
+    width: 420px;
+  }
+}
+@media (max-width: 900px) {
+  header .top-nav {
+    flex-wrap: wrap;
+  }
+  header .top-nav .search {
+    order: 3;
+    width: 80%;
+    margin: 10px auto;
+  }
+  header .links {
+    padding: 20px 0;
+  }
+  header .links ul {
+    position: fixed;
+    top: 0;
+    left: -420px;
+    bottom: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    border-right: 1px solid var(--border-color);
+    text-align: center;
+    padding-top: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  header .links ul.active {
+    left: 0;
+  }
+  header .links ul .logo_menu {
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+  }
+  header .links ul .btn_close_menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: var(--main-color);
+    display: block;
+  }
+  header .links .btn_open_menu {
+    display: block;
+    font-size: 25px;
+  }
+  header .links ul .bg_overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    background: #00000048;
+    width: calc(100vw - 400px);
+    transition: 0.3s ease-in-out;
+  }
+  header .links ul.active .bg_overlay {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header .top-nav .search {
+    width: 100%;
+  }
+  header .top-nav .search input {
+    padding: 13px 130px 13px 20px;
+  }
+  header .top-nav .search button {
+    width: 120px;
+    font-size: 14px;
+  }
+  header .links ul {
+    width: 100%;
+    left: -100%;
+  }
+  header .links ul.active .bg_overlay {
+    display: none;
+  }
+}
