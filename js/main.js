@@ -84,3 +84,11 @@ back_to_top.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+// change item img in Item detailes page
+
+let bigImage = document.getElementById("bigImg");
+
+function changeItemImage(img) {
+  bigImage.src = img;
+}

@@ -827,8 +827,43 @@ header .links ul .btn_close_menu {
   header .top-nav .search {
     width: 420px;
   }
+  .slider .container .side_bar {
+    display: none;
+  }
+  .slider .container .slide-swp {
+    width: 100%;
+  }
+  .features .container .feature_item {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  .newsletter .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .newsletter .container .text {
+    width: 100%;
+  }
+  .newsletter .newsletter_form {
+    width: 70%;
+  }
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container .row {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  footer .container .big_row {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 900px) {
+  body {
+    margin-top: 240px;
+  }
   header .top-nav {
     flex-wrap: wrap;
   }
@@ -887,9 +922,30 @@ header .links ul .btn_close_menu {
   header .links ul.active .bg_overlay {
     right: 0;
   }
+  .banner {
+    margin: 0;
+  }
+  .slide {
+    margin-bottom: 50px;
+  }
+  .slide_Product .categ_img {
+    display: none;
+  }
+  .slide_Product .product_swip {
+    width: 100%;
+  }
+  .newsletter .text h4 {
+    font-size: 25px;
+  }
+  .newsletter .text p {
+    font-size: 14px;
+  }
+  .newsletter .text h6 {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header .top-nav .search {
     width: 100%;
   }
@@ -907,4 +963,143 @@ header .links ul .btn_close_menu {
   header .links ul.active .bg_overlay {
     display: none;
   }
+  .cart {
+    width: 100%;
+    right: -100%;
+  }
+  .product .name_product a {
+    font-size: 13px;
+  }
+  .product {
+    padding: 15px 10px;
+  }
+  .stars i {
+    font-size: 14px;
+  }
+  .slide {
+    margin-bottom: 50px;
+  }
+  .top_slide h2 {
+    font-size: 16px;
+  }
+  .newsletter .newsletter_form {
+    width: 100%;
+  }
+  .newsletter .text h4 {
+    font-size: 23px;
+  }
+  .newsletter .text p {
+    font-size: 13px;
+  }
+  .newsletter .text h6 {
+    font-size: 16px;
+  }
+  .newsletter .newsletter_form button {
+    width: 120px;
+    font-size: 14px;
+  }
+  .newsletter .newsletter_form input {
+    padding: 16px 140px 16px 20px;
+  }
+  footer .container .row {
+    width: 100%;
+  }
+  footer .container .big_row {
+    width: 100%;
+  }
+}
+
+/* Item_detail page */
+
+.item_detail {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.item_detail .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_detail .img_item {
+  width: 40%;
+}
+
+.item_detail .img_item .big_img img {
+  width: 100%;
+}
+.item_detail .img_item .small_imgs {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.item_detail .img_item .small_imgs img {
+  width: 24%;
+}
+.item_detail .details_item {
+  width: 58%;
+}
+.item_detail .details_item h1 {
+  margin-bottom: 30px;
+}
+.item_detail .details_item h5 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.item_detail .details_item h5 span {
+  color: var(--main-color);
+}
+.item_detail .details_item .price {
+  justify-content: left;
+  margin: 20px 0;
+  gap: 20px;
+}
+.item_detail .details_item .price p {
+  font-size: 22px;
+}
+.item_detail .details_item .text_p {
+  line-height: 1.5;
+}
+.item_detail .details_item h4 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.item_detail .details_item button {
+  border: none;
+  outline: none;
+  background: var(--main-color);
+  color: var(--dark-color);
+  font-weight: bold;
+  padding: 14px 35px;
+  border-radius: 5px;
+  margin: 30px 0;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.item_detail .details_item button:hover {
+  scale: 1.1;
+}
+
+.item_detail .details_item .icons {
+  display: flex;
+  gap: 10px;
+}
+.item_detail .details_item .icons i {
+  width: 50px;
+  height: 50px;
+  background: #efeeee;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.item_detail .details_item .icons i:hover {
+  background: var(--main-color);
 }
