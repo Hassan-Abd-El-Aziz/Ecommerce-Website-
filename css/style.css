@@ -1136,3 +1136,39 @@ header .links ul .btn_close_menu {
     font-size: 16px;
   }
 }
+/* all products page*/
+.top_page {
+  text-align: center;
+  padding: 50px 0;
+}
+.top_page h1 {
+  font-size: 40px;
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+.top_page p {
+  font-size: 18px;
+  width: 60%;
+  margin: auto;
+  color: var(--para-color);
+}
+.all_products .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.all_products .container .filter {
+  background: #fff;
+  width: 280px;
+  height: 300px;
+}
+.all_products .products_dev {
+  width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+}
+.all_products .products_dev .product {
+  width: 22%;
+  margin-bottom: 30px;
+}
