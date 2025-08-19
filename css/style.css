@@ -1157,11 +1157,41 @@ header .links ul .btn_close_menu {
   justify-content: space-between;
   align-items: flex-start;
 }
-.all_products .container .filter {
+.all_products .filter {
   background: #fff;
   width: 280px;
-  height: 300px;
+  text-transform: capitalize;
+  padding: 20px 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
 }
+
+.all_products .filter input:checked {
+  accent-color: var(--main-color);
+}
+.all_products .filter h4 {
+  margin-bottom: 10px;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.all_products .filter span {
+  font-size: 14px;
+  cursor: pointer;
+}
+.all_products .filter .filter_item .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.all_products .filter .filter_item .item .color {
+  width: 20px;
+  height: 20px;
+}
+
 .all_products .products_dev {
   width: calc(100% - 300px);
   display: flex;
@@ -1171,4 +1201,36 @@ header .links ul .btn_close_menu {
 .all_products .products_dev .product {
   width: 22%;
   margin-bottom: 30px;
+}
+
+.pagination {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.pagination .btn_page {
+  font-size: 22px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.pagination .btn_page:hover {
+  color: var(--main-color);
+}
+.pagination .num_page {
+  border: 1px solid transparent;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.pagination .num_page.active,
+.pagination .num_page:hover {
+  border: 1px solid var(--main-color);
+  cursor: pointer;
 }
