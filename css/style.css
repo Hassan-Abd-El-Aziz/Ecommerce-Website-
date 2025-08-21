@@ -1234,3 +1234,67 @@ header .links ul .btn_close_menu {
   border: 1px solid var(--main-color);
   cursor: pointer;
 }
+.all_products .btn_filter {
+  display: none;
+}
+@media (max-width: 1500px) {
+  .all_products .products_dev .product {
+    width: 31%;
+  }
+}
+@media (max-width: 1000px) {
+  .all_products .container {
+    position: relative;
+    padding-top: 60px;
+  }
+  .all_products .filter {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 40%;
+    opacity: 0;
+    z-index: -100;
+    transition: 0.3s opacity ease-in-out;
+  }
+  .all_products .filter.active {
+    opacity: 1;
+    z-index: 100;
+  }
+  .all_products .products_dev {
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .all_products .btn_filter {
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding: 12px 30px;
+    background: var(--main-color);
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 650px) {
+  .all_products .products_dev .product {
+    width: 48%;
+  }
+  .top_page h1 {
+    font-size: 22px;
+  }
+  .top_page p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .top_page {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .all_products .filter {
+    width: 100%;
+  }
+}
