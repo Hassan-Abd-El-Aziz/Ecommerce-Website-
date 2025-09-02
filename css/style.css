@@ -1414,3 +1414,55 @@ header .links ul .btn_close_menu {
   background: transparent;
   color: var(--main-color);
 }
+/* reponsive checkout page */
+@media (max-width: 1000px) {
+  .checkout .container {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkout form {
+    width: 70%;
+  }
+  .checkout .ordersummary {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  .checkout .container {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkout form {
+    width: 100%;
+  }
+  .checkout .ordersummary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout .ordersummary h1 {
+    font-size: 20px;
+  }
+  .checkout .ordersummary .items .item_cart h4 {
+    font-size: 14px;
+  }
+  .checkout .ordersummary .items .item_cart img {
+    width: 100px;
+  }
+  .checkout .ordersummary .total p,
+  .checkout .ordersummary .total span {
+    font-size: 20px;
+  }
+  .checkout .ordersummary .button_div button {
+    font-size: 15px;
+  }
+  .checkout form h2 {
+    font-size: 15px;
+  }
+}
